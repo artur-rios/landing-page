@@ -1,5 +1,11 @@
 # Next Landing
 
+> [!NOTE]
+> This is the real, open-source code of landing-page. Its home is Forgejo, at
+> https://git.techcraftsmen.net/artur-rios/landing-page; the copy on GitHub is a read-only mirror, for viewing only, and
+> its issues and pull requests are not followed. If you want to contribute, email me at
+> arturdev@duck.com.
+
 Easy to setup, customizable, quick, and responsive landing page starter built with [Next.js](https://nextjs.org) and [shadcn/ui](https://ui.shadcn.com).
 
 - [Live Preview](https://nextlanding.rdev.pro)
