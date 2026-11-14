@@ -20,10 +20,10 @@ export default function FeatureCards() {
             return (
               <Card
                 key={cards.text}
-                className="flex flex-grow flex-col items-center justify-between gap-4 p-8 dark:bg-secondary"
+                className="flex grow flex-col items-center justify-between gap-4 p-8 dark:bg-secondary"
               >
                 <div className="flex">
-                  <Icon className="h-[6rem] w-[6rem]" />
+                  <Icon className="h-24 w-24" />
                 </div>
                 <div className="space-y-2">
                   <CardTitle>{cards.text}</CardTitle>
