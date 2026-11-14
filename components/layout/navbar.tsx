@@ -34,14 +34,14 @@ export default function Navbar() {
             </Link>
             <div className="flex gap-1 md:hidden">
               <button
-                className="rounded-md p-2 text-primary outline-none focus:border focus:border-primary"
+                className="rounded-md p-2 text-primary outline-hidden focus:border focus:border-primary"
                 aria-label="Hamburger Menu"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 "
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -54,7 +54,7 @@ export default function Navbar() {
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 "
+                    className="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -74,12 +74,12 @@ export default function Navbar() {
         </div>
         <div>
           <div
-            className={`absolute left-0 right-0 z-10 m-auto justify-self-center rounded-md border bg-background p-4 md:static md:mt-0 md:block md:border-none md:p-0 ${
+            className={`absolute right-0 left-0 z-10 m-auto justify-self-center rounded-md border bg-background p-4 md:static md:mt-0 md:block md:border-none md:p-0 ${
               navbar ? "block" : "hidden"
             }`}
             style={{ width: "100%", maxWidth: "20rem" }}
           >
-            <ul className="flex flex-col items-center space-y-4 text-primary opacity-60 md:flex-row md:space-x-6 md:space-y-0">
+            <ul className="flex flex-col items-center space-y-4 text-primary opacity-60 md:flex-row md:space-y-0 md:space-x-6">
               {navLinks.map((link) => (
                 <li key={link.route}>
                   <Link
